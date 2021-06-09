@@ -29,16 +29,62 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
+/******************************************* flex grow **********************************************************/
+/* Esto define la capacidad de un artículo flexible para crecer si es necesario. Acepta un valor sin unidades que sirve como proporción. Dicta la cantidad de espacio disponible dentro del contenedor flexible que debe ocupar el artículo.
+
+Si todos los elementos se han establecido con  flex-grow en 1, el espacio restante en el contenedor se distribuirá por igual a todos los hijos. Si uno de los hijos tiene un valor de 2, el espacio restante ocuparía el doble de espacio que los demás (o lo intentará, al menos).
+
+Los números negativos no son válidos. */
+
+/* .container {
+  display:flex;
+}
+
+.box1 {
+  flex-grow: 2;
+}
+
+.box2 {
+  flex-grow: 5;
+} */
+
+
+/******************************************* flex shrink **********************************************************/
+/* Esto define la capacidad de un artículo flexible para crecer si es necesario. Acepta un valor sin unidades que sirve como proporción. Dicta la cantidad de espacio disponible dentro del contenedor flexible que debe ocupar el artículo.
+
+Si todos los elementos se han establecido con  flex-grow en 1, el espacio restante en el contenedor se distribuirá por igual a todos los hijos. Si uno de los hijos tiene un valor de 2, el espacio restante ocuparía el doble de espacio que los demás (o lo intentará, al menos).
+
+Los números negativos no son válidos. */
+
+/******************************************* flex basis **********************************************************/
+
+/* Flex-basis controla el tamaño predeterminado de un elemento, antes de que sea manipulado por otras propiedades de Flexbox. */
+
+/******************************************* Entendiendo las 3 propiedades*****************************************************/
+/* .box1 {
+  flex-grow:[max];
+  flex-shrink: [min];
+  flex-basis: [ideal size];
+} */
+/* o tambien se escribe de manera abreviada */
+/* .box {
+  flex: [flex-grow] [flex-shrink] [flex-basis];
+} */
+
 .container {
   display:flex;
 }
 
 .box1 {
-  flex:10 5 400px;
+  flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 2;
 }
 
 .box2 {
-  flex:1 1 400px;
+  flex-basis: 400px;
+  flex-grow: 2;
+  flex-shrink: 1;
 }
 
 

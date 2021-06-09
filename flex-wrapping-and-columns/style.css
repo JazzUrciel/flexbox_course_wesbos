@@ -29,6 +29,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
+/********************************************* flex-wrap *********************************************************/
+/* De forma predeterminada, todos los elementos flexibles intentarán encajar en una línea. Puede cambiar eso y permitir que los elementos se ajusten según sea necesario con esta propiedad.
+
+nowrap: Cada elemento se ajusta en una sola línea.
+wrap: los elementos se envuelven alrededor de líneas adicionales.
+wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa. */
+
+/* el combinar basis y wrap nos ayuda a que nuestros elementos se acomoden dentro de un espacio predeterminado. */
+
 .container {
   display:flex;
   flex-wrap:wrap;

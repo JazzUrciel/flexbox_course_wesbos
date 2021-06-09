@@ -29,6 +29,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
+/* flex property */
+/* Esta es la abreviatura de flex-grow, flex-shrinky flex-basis combinado. El segundo y tercer parámetro ( flex-shrinky flex-basis) son opcionales. El valor predeterminado es 0 1 auto, pero si lo configura con un solo valor numérico, es como 1, 2, 3, 0. */
+
 .container {
   display:flex;
 }
@@ -39,4 +42,8 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box2 {
   flex:2;
+}
+
+.box5 {
+  flex:auto;
 }
