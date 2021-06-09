@@ -34,8 +34,18 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   border:10px solid goldenrod;
   min-height:100vh;
   flex-wrap:wrap;
+
 }
 
 .box {
   width:33.3333333%;
 }
+
+/* flex-direction */
+/* Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+*row: Elementos son colocados en la misma dirección del texto.
+*row-reverse: Elementos son colocados en la dirección opuesta al texto.
+*column: Elementos se colocan de arriba hacia abajo.
+*column-reverse: Elementos se colocan de abajo hacia arriba. */
+

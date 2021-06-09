@@ -44,3 +44,5 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box5 {
   order:2;
 }
+
+/* Los elementos flexibles se muestran en el mismo orden en que aparecen en el documento de origen de forma predeterminada. La propiedad order se puede utilizar para cambiar este orden. */

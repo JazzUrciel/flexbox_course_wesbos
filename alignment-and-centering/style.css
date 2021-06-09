@@ -28,20 +28,128 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box10 { background:#16a085;}
 
 
+/* *****************************video 9 align self ************************************/
+
+/* Esta propiedad acepta los mismos valores de align-items y sus valores son usados para un elemento específico. */
+
+.container{
+  display: flex;
+  border: 10px solid mistyrose;                                       
+  height: 100vh; 
+  align-items: flex-start;
+}
+
+.box{
+  width: 33.333%;
+}
+
+.box2{
+  padding-bottom: 200px;
+}
+.box6{
+  padding-bottom: 0;
+}
+.box9{
+  padding-bottom: 50px;
+  align-self: flex-end;
+}
+
+
+/* *****************************video 8 align content ************************************/
+
+/* Puedes usar align-content para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+
+flex-start: Las líneas se posicionan en la parte superior del contenedor.
+flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+space-between: Las líneas se muestran con la misma distancia entre ellas.
+space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+stretch: Las líneas se estiran para ajustarse al contenedor.
+Esto puede ser confuso, pero align-content determina el espacio entre las líneas, mientras que align-items determina cómo los elementos en su conjunto están alineados dentro del contenedor. */
+
+/* .container{
+  display: flex;
+  border: 10px solid mistyrose;                                       
+  height: 100vh; 
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.box{
+  width: 33.333%;
+} */
+
+
+
+/* *****************************video 7 align items ************************************/
+/* Esta propiedad CSS alinea elementos verticalmente (cross-axis) y acepta los siguientes valores:
+
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor. */
+
+/* .container{
+  display: flex;
+  justify-content: center;
+  border: 10px solid mistyrose;
+  height: 100vh; 
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.box1{
+  font-size: 30px;
+}
+
+.box3{
+  font-size: 150px;
+}
+
+.box5{
+  font-size: 200px;
+}
+
+.box10{
+  font-size: 77px;
+} */
+
+
+/* *****************************video 6 justify-content ************************************/
+/* Alinea elementos horizontalmente (trabaja en el eje principal) y acepta los siguientes valores:
+
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos. */
+
+/* .container{
+  display: flex;
+  justify-content: center;
+  border: 10px solid mistyrose;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+/* ************************************************************************************************************ */
+
+
 /* We start writing out flexbox here. The above is just page setup */
-.container {
+/* .container {
   display:flex;
   border:10px solid mistyrose;
   min-height:100vh;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .box {
   width:33.333%;
-  /* margin: 10px; */
+  margin: 10px;
   border: 10px solid mistyrose;
-}
+} */
 
 /* .box2 {
   padding-bottom: 200px;
